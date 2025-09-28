@@ -1,0 +1,22 @@
+#数据路径和预处理配置
+IMG_PATH=".\\common\\dataset"  #注意这里的路径只有当工作目录是项目根目录时才有效
+IMG_HEIGHT=512
+IMG_WIDTH=512
+
+#随机性和数据划分配置
+SEED=42
+TRAIN_RATIO=0.75
+VAL_RATIO=1-TRAIN_RATIO
+SHUFFLE_BUFFER_SIZE=100
+NOISE_FACTOR=0.5
+
+#训练超参数配置
+LEARNING_RATE=0.001
+EPOCHS=30
+TRAIN_BATCH_SIZE=1
+TEST_BATCH_SIZE=1
+
+
+#模型配置
+PACKAGE_NAME="image_denoising"
+DENOISER_MODEL_NAME="denoiser.pt"
